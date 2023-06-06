@@ -27,6 +27,11 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+    background-color: #162938;
+}
+
+header img {
+    width: 9rem;
 }
 
 .logo {
@@ -79,6 +84,10 @@ header {
 .navigation .btnLogin-popup:hover{
     background: #fff;
     color: #162938;
+}
+
+.navigation .active-page::after{
+    transform: scaleX(1);
 }
 
 .wrapper {
