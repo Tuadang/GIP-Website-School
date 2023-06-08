@@ -12,9 +12,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('background.jpg') no-repeat;
+    background: url('background.jpg') no-repeat; 
     background-size: cover;
-    background-position: center;
+    background-position: center; 
 }
 
 header {
@@ -27,7 +27,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    background-color: #162938;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 header img {
@@ -91,7 +91,7 @@ header img {
 }
 
 .wrapper {
-    position: relative;
+    position: absolute;
     width: 400px;
     height: 440px;
     background: transparent;
@@ -105,6 +105,8 @@ header img {
     justify-content: center;
     align-items: center;
     transition: transform .5s ease, height .2s ease;
+    margin-top: 100px; 
+    z-index: 1;
 }
 
 .wrapper.active-popup {
@@ -254,11 +256,30 @@ header img {
     margin: 25px 0 10px;
 }
 
-.login-register .register-link {
+.register-link {
     color: #162938;
     text-decoration: none;
 }
 
-.login-register .register-link p a:hover { 
+.register-link a:hover { 
     text-decoration: underline;
+}
+
+.login-link {
+    color: #162938;
+    text-decoration: none;
+}
+
+.login-link a:hover { 
+    text-decoration: underline;
+}
+
+.title {
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 8em;
 }
