@@ -276,9 +276,8 @@ header img {
 
 .title {
     font-weight: 500;
-    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     color: #fff;
     font-size: 8em;
